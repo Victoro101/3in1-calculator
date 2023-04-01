@@ -1,0 +1,528 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    body{
+        padding-top: 3em;
+        background: gold;
+    }
+    header{
+        width: 100%;
+        /* margin: auto; */
+        background: gold;
+        text-align: center;
+    }
+    .age{
+        color: rgba(0, 0, 0, 0.631);
+        text-align: center;
+    }
+    .ageCal{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+
+    }
+    .labels{
+        display: flex;
+        justify-content: center;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: .5rem;
+        border-radius: 5px;
+        background: white;
+        width: 33%;
+        height: 8rem;
+        /* align-items: flex-end; */
+    }
+    label span{
+        margin-top: .5rem;
+        /* text-align: center; */
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 1rem;
+    }
+    label input{
+        width: 50%;
+        height: 3rem;
+        background: none;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        /* font-weight: bold; */
+        text-align: center;
+        color: black;
+        border: none;
+       
+        /* margin: auto; */
+        border-image-slice: 1;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-image-source: linear-gradient(to right,rgb(255, 17, 0),blue);
+
+    }
+    .buttons{
+        width: 70%;
+        display: flex;
+        margin: auto;
+        /* background: red; */
+    }
+    #getAge{
+        width: 45%;
+        margin: auto;
+        height: 2.5rem;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+        background: orangered;
+        border-radius: 3px;
+    }
+    /* #getAge:last-child{
+        margin-left: 1rem;
+    } */
+    .answers{
+        height: 5em;
+        border-radius: 5px;
+        width: 70%;
+        margin-top: 1rem;
+        padding: 1rem;
+        margin: auto;
+        background: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(63, 63, 63);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.866);
+        font-weight: bold;
+    }
+
+
+@media (max-width:1024px) {
+    body{
+        padding-top: 3em;
+        background: gold;
+    }
+    header{
+        width: 100%;
+        /* margin: auto; */
+        background: gold;
+        text-align: center;
+    }
+    .age{
+        color: rgba(0, 0, 0, 0.631);
+        text-align: center;
+    }
+    .ageCal{
+        display: n;
+        flex-direction: column;
+        gap: 1.3rem;
+
+    }
+    .labels{
+        display: flex;
+        justify-content: center;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: .5rem;
+        border-radius: 5px;
+        background: white;
+        width: 33%;
+        height: 8rem;
+        /* align-items: flex-end; */
+    }
+    label span{
+        margin-top: .5rem;
+        /* text-align: center; */
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 1rem;
+    }
+    label input{
+        width: 50%;
+        height: 3rem;
+        background: none;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        /* font-weight: bold; */
+        text-align: center;
+        color: black;
+        border: none;
+       
+        /* margin: auto; */
+        border-image-slice: 1;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-image-source: linear-gradient(to right,rgb(255, 17, 0),blue);
+
+    }
+    .buttons{
+        width: 70%;
+        display: flex;
+        margin: auto;
+        /* background: red; */
+    }
+    #getAge{
+        width: 45%;
+        margin: auto;
+        height: 2.5rem;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+        background: orangered;
+        border-radius: 3px;
+    }
+    /* #getAge:last-child{
+        margin-left: 1rem;
+    } */
+    .answers{
+        height: 5em;
+        border-radius: 5px;
+        width: 70%;
+        margin-top: 1rem;
+        padding: 1rem;
+        margin: auto;
+        background: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(63, 63, 63);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.866);
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:425px) {
+    body{
+        padding-top: 3em;
+        background: gold;
+    }
+    header{
+        width: 100%;
+        /* margin: auto; */
+        background: gold;
+        text-align: center;
+    }
+    .age{
+        color: rgba(0, 0, 0, 0.631);
+        text-align: center;
+    }
+    .ageCal{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+
+    }
+    .labels{
+        display: flex;
+        justify-content: center;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: .5rem;
+        border-radius: 5px;
+        background: white;
+        width: 33%;
+        height: 8rem;
+        /* align-items: flex-end; */
+    }
+    label span{
+        margin-top: .5rem;
+        /* text-align: center; */
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 1rem;
+    }
+    label input{
+        width: 50%;
+        height: 3rem;
+        background: none;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        /* font-weight: bold; */
+        text-align: center;
+        color: black;
+        border: none;
+       
+        /* margin: auto; */
+        border-image-slice: 1;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-image-source: linear-gradient(to right,rgb(255, 17, 0),blue);
+
+    }
+    ::placeholder{
+        color: rgb(218, 218, 218);
+    }
+    .buttons{
+        width: 70%;
+        display: flex;
+        margin: auto;
+        /* background: red; */
+    }
+    #getAge{
+        width: 45%;
+        margin: auto;
+        height: 2.5rem;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+        background: orangered;
+        border-radius: 3px;
+    }
+    /* #getAge:last-child{
+        margin-left: 1rem;
+    } */
+    .answers{
+        height: 5em;
+        border-radius: 5px;
+        width: 70%;
+        margin-top: 1rem;
+        padding: 1rem;
+        margin: auto;
+        background: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(63, 63, 63);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+    .switching{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+        /* background: white; */
+    }
+   .switching>button{
+    width: 25%;
+    padding: .5rem 1rem ;
+    background: none;
+    border: 2px solid rgb(255, 54, 54);
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.824);
+
+   }
+   .bmispace{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+   }
+   .bmispace>input{
+width: 70%;
+padding: 1rem 1rem;
+border: none;
+border-radius: 5px;
+font-size: 1.3rem;
+}
+ .buttons2>button{
+    
+    /* width: 70%; */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    
+    background: orangered;
+    color: white;
+
+   }
+
+   .buttons2{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background: red; */
+
+   }
+   .bmispace h2{
+    padding-bottom: 2rem;
+    color: rgba(0, 0, 0, 0.672);
+   }
+   .answerBmi{
+    background: white;
+    margin: auto;
+    height: 3rem;
+    width: 70%;
+    margin-bottom: 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: bold;
+    font-size: 1.2rem;
+
+   }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.866);
+        font-weight: bold;
+    }
+
+
+/* 
+h1 {
+    text-align   : center;
+    margin-bottom: 0;
+    margin-top   : 0;
+}
+
+
+body {
+    overflow       : hidden;
+    margin         : auto;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+
+
+.calculator {
+    display        : flex;
+    overflow       : hidden;
+    width          : 90%;
+    flex-direction : column;
+    justify-content: center;
+    margin         : auto;
+    align-items    : center;
+    position       : relative;
+    gap            : 10px;
+    height         : 600px;
+    top            : -25px;
+
+    .input {
+        display        : flex;
+        justify-content: center;
+        width          : 310px;
+        align-items    : center;
+
+        @media screen and (max-width:480px) {
+            width: 95%;
+
+        }
+
+        @media screen and (min-width:746px) {
+            width: 35%;
+
+        }
+
+        .inputfield {
+            width : 100%;
+            height: 40px;
+
+        }
+    }
+
+    .buttons {
+        // display              : grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // width                : 100%;
+        // gap                  : 5px;
+        // height               : 60vh;
+        width                               : 310px;
+        display                             : grid;
+        gap                                 : 5px;
+        height                              : 400px;
+        // position                         : absolute;
+        // top                              : 100px;
+        // translate                     : 150% 0;
+        transition                          : 1s;
+        // right                   : 0px;
+        // display              : none;
+        grid-template-columns               : repeat(4, 1fr);
+
+        @media screen and (max-width:480px) {
+            width: 95%;
+
+        }
+
+        @media screen and (min-width:746px) {
+            width: 35%;
+
+        }
+
+        button {
+            font-size: 20px;
+
+        }
+    }
+
+    .advanced {
+
+        &.active {
+            translate: 0 0;
+        }
+
+
+        button {
+            font-size   : 17px;
+            // display  : none;
+
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

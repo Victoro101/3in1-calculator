@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 in 1 Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1> 3 in 1 Calculator</h1>
+    </header>
+    <div class="ageCal">
+        <h2 class="age">Age Calculator</h2>
+        <div class="labels">
+
+            <label for="birth"><span>Birth Year</span>
+                <input type="number" placeholder="2004" id="birthYear">
+            </label>
+            <label for="current"><span>Current Year</span>
+                <input type="number" placeholder="2022" id="currentYear">
+            </label>
+        </div>
+        <div class="answers">
+
+        </div>
+        <div class="buttons">
+
+            <button type="button" id="getAge" onclick="ageCalculator()">Get Age</button>
+            <button type="button" id="getAge" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <div class="bmispace">
+        <h2>BMI Calculator</h2>
+        <input type="text" placeholder="Enter wieght" name="wieght" id="weight"><br>
+        <input type="text" placeholder="Enter Height" name="height" id="height"><br>
+        <div class="answerBmi">
+
+        </div>
+        <div class="buttons2">
+
+            <button type="submit" name="submit" onclick="bmiCalculator()">Calculate</button>
+            <button type="submit" name="submit" onclick="reset2()">Reset</button>
+        </div>
+    </div>
+    <div class="switching">
+        <button type="button" id="bmi">BMI Calculator</button>
+        <button type="button" id="agee">Age Calculator</button>
+        <button type="button" id="scientific">Scientific Calculator</button>
+    </div>
+
+    <div class="scientificCalculator">
+
+
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <div class="input">
+                <input type="text" class="inputfield" readonly disabled>
+            </div>
+            <div class="buttons">
+                <button class="1" onclick="input.value += 1">1</button>
+                <button class="2" onclick="input.value += 2">2</button>
+                <button class="3" onclick="input.value += 3">3</button>
+                <button class="4" onclick="input.value += 4">4</button>
+                <button class="5" onclick="input.value += 5">5</button>
+                <button class="6" onclick="input.value += 6">6</button>
+                <button class="7" onclick="input.value += 7">7</button>
+                <button class="8" onclick="input.value += 8">8</button>
+                <button class="9" onclick="input.value += 9">9</button>
+                <button class="0" onclick="input.value += 0">0</button>
+                <button class="point" onclick="input.value += '.'">.</button>
+                <button class="plus" onclick="input.value += '+'">+</button>
+                <button class="minus" onclick="input.value += '-'">-</button>
+                <button class="divide" onclick="input.value += '/'">/</button>
+                <button class="mult" onclick="input.value += '*'">x</button>
+                <button class="sin">Sin</button>
+                <button class="cos">Cos</button>
+                <button class="tan">Tan</button>
+                <button class="sqrt">√</button>
+                <button class="square">²</button>
+                <button class="cube">³</button>
+                <button class="cubert">∛</button>
+                <button class="log">log</button>
+                <button class="pi">⋏</button>
+                <button class="round">Rnd</button>
+                <button class="del">DEL</button>
+                <button class="clear" onclick="input.value = ''">CE</button>
+                <button class="equals">=</button>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        Made with 💖 by Victor
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
